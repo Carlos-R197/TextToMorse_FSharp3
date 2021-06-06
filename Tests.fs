@@ -19,4 +19,9 @@ let one_word_test () =
 [<Fact>]
 let sentence_test () =
     Assert.Equal("- --- -.. .- -.-- / .. ... / .-. .- .. -. -.-- .-.-.-", text_to_morse("Today is rainy."))
+
+[<Fact>]
+let full_text_test () =
+    Assert.Equal("- .... . / .-- . .- - .... . .-. / .. ... / .-. . .- .-.. .-.. -.-- / --. --- --- -.. / - --- -.. .- -.-- .-.-.- / .-- --- ..- .-.. -.. / -.-- --- ..- / .-.. .. -.- . / - --- / --. --- / ..-. --- .-. / .- / .--. .. -.-. -. .. -.-. ..--..", 
+        text_to_morse("The weather is really good today. Would you like to go for a picnic?"))
   
