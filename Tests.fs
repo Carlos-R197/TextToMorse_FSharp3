@@ -15,3 +15,8 @@ let one_letter_test () =
 [<Fact>]
 let one_word_test () =
     Assert.Equal("- --- -.. .- -.--", text_to_morse("Today"))
+
+[<Fact>]
+let sentence_test () =
+    Assert.Equal("- --- -.. .- -.-- / .. ... / .-. .- .. -. -.-- .-.-.-", text_to_morse("Today is rainy."))
+  
